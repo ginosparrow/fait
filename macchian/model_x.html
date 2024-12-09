@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>model_X</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carme&family=Concert+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="gino">
+
+        <h1>FIAT</h1> 
+
+        <ul class="lista">
+            <a href="404.html"><li>INFO</li></a>
+            <a href="404.html"><li>SHOP</li></a>
+            <a href="index.html"><li>HOME</li></a>
+        </ul>
+
+        <div class="gg" onclick="giu()">
+            <h3>MODELLI</h3>
+        </div>
+
+        <div id="gennaro" class="modelli">
+            <a href="modelm_s.html">modello s</a>
+            <a href="model_e.html">modello e</a>
+            <a href="model_x.html">modello x</a>
+        </div>
+
+        <div class="modell">
+            <h3>MODELLI</h3>
+        </div>
+
+        <div class="model">
+            <a href="modelm_s.html">modello s</a>
+            <a href="model_e.html">modello e</a>
+            <a href="model_x.html">modello x</a>
+        </div>
+
+        <div class="burgher" onclick="menu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <div class="copertina">
+        <div class="imgg">
+            <img src="https://www.autoscout24.it/cms-content-assets/7LabGxNi1EhSQfwX5rkfD-64274ed8e8bb09ea0b02db3cf6dbe589-Dodge-Charger-2015-1280-27-1100-1100.webp" alt="auto">
+        </div>
+        <div class="text">
+            <h2>Model X</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae odit nobis sequi nulla, quaerat corporis facilis. Tenetur reprehenderit inventore amet itaque magni, ut cum sunt aut vitae soluta deleniti!</p>
+            <div class="card">
+                <h3>CARD</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, assumenda aliquid praesentium natus voluptatem in, aut deserunt saepe odit, commodi quos nostrum! Enim, nesciunt voluptate magnam dolorum tenetur voluptatum quas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sprecifiche">
+        <h2>Sprecifiche</h2>
+        <div class="speck">
+            <h4>specifica specifica</h4>
+            <h4>specifica specifica</h4>
+            <h4>specifica specifica</h4>
+            <h4>specifica specifica</h4>
+            <h4>specifica specifica</h4>
+            <h4>specifica specifica</h4>
+        </div>
+
+        <div class="button">
+            <h2>Comprami</h2>
+        </div>
+    </div>
+
+
+
+    <script>
+        var i = 0;
+        var men = document.getElementById("gino");
+        function menu() {
+            if (i == 1) {
+            men.style.height= "100vh";
+            i = 0;
+        }else{
+            men.style.height= "67px";
+            i = 1;
+        }
+            
+        }
+
+        var r = 0;
+        var man = document.getElementById("gennaro");
+        function giu() {
+            if (r == 1) {
+            man.style.top= "-200px";
+            r = 0;
+        }else{
+            man.style.top= "67px";
+            r = 1;
+        }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+body{
+    background-color: aliceblue;
+    font-family: "Carme", sans-serif;
+    color: rgb(33, 33, 33);
+    margin: 0;
+}
+
+a{
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+}
+
+nav{
+    
+    position: fixed;
+    width: 98%;
+    color: rgb(34, 40, 45);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background: linear-gradient( 0deg, rgba(255, 255, 255, 0.912), rgba(255, 255, 255, 0.901)) ;
+}
+
+nav ul{
+    display: flex;
+}
+
+.lista li{
+    color: rgb(47, 61, 73);
+    margin: 8px;
+    list-style: none;
+}
+
+.lista li:hover{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+nav h1{
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 10px red;
+}
+.gg{
+    color: black;
+    padding-right: 40px ;
+}
+
+
+
+.modelli{
+    z-index: 9;
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    background-color: black;
+    top:-200px;
+    color: aliceblue;
+    right: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0px 15px 15px;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.320, 1);
+    
+}
+
+
+.modelli a{
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    color: red;
+    border: 2px solid rgb(59, 2, 2);
+}
+.modelli a:hover{
+    border: none;
+    background: linear-gradient(45deg, red, rgb(101, 0, 0));
+    color: black;
+}
+
+.model{
+    display: none;
+}
+.modell{
+    display: none;
+}
+.burgher{
+  display: none;
+}
+
+.previw{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:linear-gradient(45deg, rgb(0, 0, 0), rgba(92, 92, 92, 0)), url(https://www.autoscout24.it/cms-content-assets/QXt9kZS5TDfekRO6AN6Uf-d61d76cdbb1fef42b179437641b99bac-Dodge-Charger-2015-1280-05-1100-1100.webp) no-repeat center;
+    background-size: cover;
+}
+
+.previw h2{
+    color: rgb(255, 21, 0);
+    padding:0 10%;
+    width: 40%;
+    
+}
+
+.previw h1{
+    color: rgb(255, 21, 0);
+    padding:0 10%;
+    
+}
+
+.copertina{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.imgg{
+    overflow: hidden;
+    width: 60%;
+    height: 100%;
+}
+
+.imgg img{
+    height: 100%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 20px;
+}
+
+.text h2{
+    border-left: 5px solid red;
+    padding-left: 10px;
+    width: 100%;
+    font-size: 30px;
+}
+.card{
+    margin: 10%;
+    width: 80%;
+    background: linear-gradient(135deg, rgb(255, 0, 0), rgb(62, 0, 0));
+    height: 60%;
+    border-radius: 20px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.card p{
+    text-align: justify;
+    padding: 30px;
+}
+.card h3{
+    text-align: center;
+
+}
+
+.sprecifiche{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0.356), rgb(0,0,0)), url(https://www.autoscout24.it/cms-content-assets/4OdXQBrZidbMtJ4kI508On-dbd6bab16b3d9cba78671ecb3b8665f1-Dodge-Charger-2015-1280-19-1100-1100.webp)no-repeat center;
+    background-size:cover ;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.speck{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 5px solid red;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    box-shadow: 0px 0px 20px red;
+}
+
+.button{
+    background: linear-gradient(135deg, rgb(255,0,0), rgb(109, 9, 9));
+    width: 20%;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 200ms;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 20px red;
+    transform: scale(1.1);
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .copertina{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .text{
+        height: 50%;
+        width: 90%;
+    }
+    .imgg{
+        width: 100%;
+    }
+    .sprecifiche{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav{
+        text-align: center;
+        display: block;
+        overflow: hidden;
+        align-items: center;
+        height: 67px;
+        transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .lista {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .gg{
+        display: none;
+    }
+    .modell{
+        display: block;
+   
+        margin: 0px 10px;
+        padding: 0px 50px;
+        text-align: center;
+    }
+    .model{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: black;
+        width: 81%;
+        padding: 20px;
+        border-radius: 20px;
+        
+
+    }
+
+    .model a{
+        color: red;
+        border: 2px solid rgb(84, 0, 0);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+        margin-left: 32px;
+    }
+    .model a:hover{
+        border: none;
+        background: linear-gradient(45deg, red, rgb(101, 0, 0));
+        color: black;
+    }
+
+    .burgher{
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        top: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .burgher div{
+        background-color: black;
+        width: 100%;
+        height: 5px;
+        border-radius: 20px;
+    }
+
+    .card{
+        height: 70%;
+    }
+    .sprecifiche{
+        height: auto;
+
+        padding: 10px 0px;
+    }
+    .speck{
+        width: 80%;
+        margin: 9px;
+    }
+}
